@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <nav class="navbar bg-primary navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-2" href="./index.html"><span class="fa fa-cab fa-lg"></span> </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-book fa-lg"></span> Booking</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                		<!-- id="login_link" -->
+                    <form action="logout"><i class="fa fa-sign-out"></i><input type="submit" class="btn btn-primary p-0"  value="Logout"/></form>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header ">
+                <div class="col-12 col-sm-6 align-self-center">
+                	<div class="row justify-content-center">
+                    	<h1>VCAB SERVICE APP</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                    	<h1 class=" d-none d-sm-block"> MADE EASY</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                    	<h3 class=" d-none d-sm-block">Start booking your ride in no time!! </h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <img src="images/logo.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <a role="button" class="btn btn-block nav-link btn-warning" id="reserve_link">Rent Car 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </header>
+
+
+
+    <div id="reserve" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Rent a Car</h4>
+                    <button type="button" class="close" id="dismiss">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="index.html">
+                        <div class="row">
+                            <p class="col-sm-2">Number of Days</p>
+                            <div class="form-check form-check-inline col-sm-auto">
+                                <label class="form-check-label ">
+                                    <input type="radio" name="guests" id="guests" class="form-check-input" value="1"> 1
+                                    &nbsp;
+                                </label>
+                                <label class="form-check-label ">
+                                    <input type="radio" name="guests" id="guests" class="form-check-input" value="2"> 2
+                                    &nbsp;
+                                </label>
+                                <label class="form-check-label ">
+                                    <input type="radio" name="guests" id="guests" class="form-check-input" value="3"
+                                        checked> 3 &nbsp;
+                                </label>
+                                <label class="form-check-label ">
+                                    <input type="radio" name="guests" id="guests" class="form-check-input" value="4"> 4
+                                    &nbsp;
+                                </label>
+                                <label class="form-check-label ">
+                                    <input type="radio" name="guests" id="guests" class="form-check-input" value="5"> 5
+                                    &nbsp;
+                                </label>
+                                <label class="form-check-label ">
+                                    <input type="radio" name="guests" id="guests" class="form-check-input" value="6"> 6
+                                    &nbsp;
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm-2">Trip Type</p>
+                            <div class="btn-group btn-group-toggle col-sm-auto" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="section" id="option1" autocomplete="off" value="0"
+                                        checked> One Way Trip
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="section" id="option2" autocomplete="off" value="1">
+                                    Round Trip
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label class="col-sm-2 col-form-label">Date and Time</label>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-sm-2 col-md-10">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary ml-2">Book</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="container">
+		<div class="row row-section p-2 pt-5">
+			<form action="showDestination.jsp" class="row ">
+				<input class="btn btn-primary" type="submit" value="Choose appropriate destination" />
+			</form>
+		</div>
+		<div class="row row-section p-2">
+			<h6>Check driver Availability Before Booking</h6>
+		</div>
+		<div class="row row-section p-2">
+			
+			<form action="transaction" class="row row-section ">
+				<input type="text" name="destination" placeholder="Enter Destination"  /><br>
+				<input class="btn btn-primary ml-5" type="submit" value="Book Ride" />
+			</form>
+		</div>
+
+		<div class="row row-section p-2">
+			
+			<form action="CancelRide" onsubmit="alertWindow()" class="row  row-section">
+				<input class="btn btn-danger" type="submit" value="Cancel the Ride" />
+			</form>
+		</div>
+		<div class="row row-section p-2">		
+			<form action="showAvailableDrivers.jsp" class="row row-section ">
+				<input class="btn btn-success" type="submit" value="Check Driver Availability" />
+			</form>
+		</div>
+		<div class="row row-section p-2 pb-5">	
+			<form action="showActiveRides.jsp" class="row  row-section">
+				<input class="btn btn-primary" type="submit" value="My Ride" />
+			</form>
+		</div>
+
+	</div>
+  
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        A-320, Gitam Boys Hostel<br>
+                        Rudraram, Patancheru<br>
+                        Telangana<br>
+                        <i class="fa fa-phone fa-lg"></i>: +91 8332029083<br>
+                        <i class="fa fa-fax fa-lg"></i>: +112 5756 1221<br>
+                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:221710301044@gitam.in">Vcab@gmail.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2020 Vcab | Design By Pulluri Saiteja</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+	<script>
+		function alertWindow() {
+			window.alert("Ride has been Canceled Successfully");
+		}
+	</script>
+    <!-- jQuery first, then popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
